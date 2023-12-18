@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(140, 175, 175);
+}
+
+a {
+  color: #00B7FF;
+}
+h3{
+  color: rgb(41, 30, 104);
+}
+
+p{
+  font-size: 25px;
+}
+
+output{
+  width: 640px;
+  height: 480px;
+  border-color: rgb(200, 200, 239);
+}
+h2#data{
+  color:rgb(14, 3, 46);
+  size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+h2#data{
+  color:rgb(14, 3, 46);
+  size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+div#h{
+ background-color: rgb(232, 218, 201);
+ width: 150px;
+ height: 160px;
+}
+div#r{
+  background-color:rgb(232, 218, 201);
+  width: 150px;
+  height: 160px;
+ }
