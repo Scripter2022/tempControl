@@ -7,17 +7,13 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var testRouter = require("./routes/test");
 var mq = require("./lib/mq.js");
-var app = express();
 
 mq.mq();
 
 var {tempHot}=require('./lib/mq.js');
-console.log("From main Script",tempHot)
-console.log("variable is define!");
-//const http=require('http');
 
 app.listen(80); 
-// view engine setup
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 app.use(logger("dev"));
@@ -26,8 +22,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "lib")));
-
-console.log(tempHot);
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
